@@ -21,10 +21,10 @@ public class HelloController {
    }
    public void left(ActionEvent e) {
 //       System.out.println("RIGHT");
-       myCircle.setCenterY(x-=10);
+       myCircle.setCenterX(x-=10);
    }
    public void right(ActionEvent e) {
 //       System.out.println("LEFT");
-       myCircle.setCenterY(x+=10);
+       myCircle.setCenterX(x+=10);
    }
 }
