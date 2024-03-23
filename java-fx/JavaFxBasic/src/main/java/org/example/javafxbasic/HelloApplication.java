@@ -20,11 +20,15 @@ import java.util.Objects;
 
 public class HelloApplication extends Application {
     @Override
-    public void start(Stage primaryStage) {
+    public void start(Stage stage) {
       try {
        Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Main.fxml")));
-       Scene scene = new Scene(root,600,600,Color.LIGHTSKYBLUE);
-       Stage stage = new Stage();
+       Scene scene = new Scene(root);
+
+       // multiple css files
+          String css = Objects.requireNonNull(this.getClass().getResource("application.css")).toExternalForm();
+          scene.getStylesheets().add(css);
+//          scene2.getStylesheets().add(css);
 
        stage.setScene(scene);
        stage.show();
