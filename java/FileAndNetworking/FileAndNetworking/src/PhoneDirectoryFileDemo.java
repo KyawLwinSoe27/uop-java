@@ -1,9 +1,10 @@
-
-import java.io.*;
-
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.PrintWriter;
 import java.util.Map;
-import java.util.TreeMap;
 import java.util.Scanner;
+import java.util.TreeMap;
 
 /**
  * This program lets the user keep a persistent "phone book" that
