@@ -22,7 +22,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage primaryStage) {
       try {
-       Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("hello.fxml")));
+       Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Main.fxml")));
        Scene scene = new Scene(root,600,600,Color.LIGHTSKYBLUE);
        Stage stage = new Stage();
 
