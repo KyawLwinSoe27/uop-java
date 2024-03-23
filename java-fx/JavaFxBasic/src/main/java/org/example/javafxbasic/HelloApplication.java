@@ -22,7 +22,7 @@ public class HelloApplication extends Application {
     @Override
     public void start(Stage stage) {
       try {
-       Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Main.fxml")));
+       Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("Scene1.fxml")));
        Scene scene = new Scene(root);
 
        // multiple css files
